@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
+.logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -36,3 +36,847 @@
     transform: rotate(360deg);
   }
 }
+
+:root {
+  --results-top: 40%;
+  --kwh-height: 100px;
+  --system-height: 175px;
+  --fortress-height: 900px;
+}
+
+#root {
+  height: 2000px;
+}
+#system-designer {
+  width: 100vw;
+  height: 2000px;
+  margin: auto;
+  position: absolute;
+}
+
+.SystemDesigner {
+  width: 75vw;
+  height: 100%;
+  /* margin: 0 auto; */
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 0%;
+}
+
+#title-text {
+  text-align:center; 
+  width: 100%; 
+}
+
+#fortress-logo {
+  width: 25vw;
+  /* width:30%; */
+  position: relative; 
+  top: 10px; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#test-info {
+  position: absolute;
+  width:25vw;
+  height:25vw;
+  top: 45%;
+  left: 5%;
+}
+
+.module {
+  width: 75%;
+  position: absolute;
+  left: 20px;
+  /* margin: 0 auto; */
+  margin-bottom:10px;
+  margin-top:10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#module-kwh {
+  height: var(--kwh-height);
+}
+
+#module-system-information {
+  position: relative;
+  height: var(--system-height);
+  width: 100%;
+  top: 120px;
+  display: none;
+}
+
+#module-fortress-system {
+  position: relative;
+  height: var(--fortress-height);
+  width: 100%;
+  top: 120px;
+  display: none;
+}
+
+#fortress-module-text {
+  top: 25px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+#system-results {
+  display: none;
+  position: relative;
+  margin: 0 auto;
+  /* margin-left: auto;
+  margin-right:auto; */
+  top: 200px;
+  left: 20px;
+  margin:0 auto;
+  /* display:block; */
+}
+
+#email-results {
+  display: none;
+  position: absolute;
+  margin: 0 auto;
+  top: 500px;
+  width: 100%;
+  height: 80px;
+}
+
+#solar-details {
+  position: absolute;
+  left: 240px;
+  top: 1px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+#optional-details {
+  display: none;
+  top: 25px;
+  position: absolute;
+  height: fit content;
+  margin-bottom: 5px;
+  width: 90%;
+  left:10%;
+}
+.sub-array {
+  width: 100%;
+  height: 30px;
+}
+.array-size {
+  position: absolute;
+  width: fit-content;
+}
+
+.array-angle {
+  position: absolute;
+  width: fit-content;
+  left: 250px;
+}
+
+.array-orientation {
+  position: absolute;
+  width: fit-content;
+  left: 450px;
+}
+.remove-subarray {
+  position: absolute;
+  left: 620px;
+}
+
+/* #remove-subarray1 {
+  top: 20px;
+}
+#remove-subarray2 {
+ top: 70px;
+}
+#remove-subarray3 {
+  top: 120px;
+}
+#remove-subarray4 {
+  top: 170px;
+}
+#remove-subarray5 {
+    top: 220px;
+} */
+
+
+#sub-array {
+  width: 100%;
+  top: 50px;
+  height: 300px;
+  position: absolute;
+  overflow: auto;
+}
+
+#sub-array-box {
+  position: absolute;
+  left: 224px;
+  top: 0px;
+  width: 16px;
+  height: 16px;
+}
+
+#sub-array-details {
+  display: none;
+  top: 25px;
+  position: absolute;
+  height: fit-content;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+#tilt-wrapper {
+  width: fit-content;
+  left: 0%;
+  top: 0%;
+  position: absolute;
+  display: inline-block;
+}
+
+#azimuth-wrapper {
+  width: fit-content;
+  left:110px;
+  position: absolute;
+  top: 0%;
+  margin-left: 15px;
+  display: inline-block;
+}
+
+#derate-wrapper {
+  width: fit-content;
+  left: 275px;
+  position: absolute;
+  top: 0%;
+  margin-left: 15px;
+}
+
+#inverter-capacity-wrapper {
+  width: fit-content;
+  left: 0px;
+  top: 25px;
+  position:absolute;
+}
+
+.angle {
+  display: inline-block;
+  margin-top: 0px;
+}
+
+#email-input-container {
+  height: 40%;
+  width:570px;
+  top: 50px;
+  left: 330px;
+  position: absolute;
+}
+
+#email-input {
+  min-width: 0;
+}
+
+#captcha-button {
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+
+#inp-tilt { width: 40px;}
+#inp-azimuth { width: 40px;}
+#inp-derate {width: 43px;}
+#inp-additional-capacity {width: 40px;}
+
+#inverter-battery {
+  position: absolute;
+  width: 100%;
+  height: 130px;
+  top: 70px;
+}
+
+#inverter-details {
+  position: absolute;
+  top: 0px; 
+  width: 100%;
+  /* margin-top: 30px; */
+}
+
+#label-inverter-quantity {
+  margin-left: 5px;
+}
+
+#battery-details {
+  position: absolute;
+  top: 60px; 
+  /* margin-top: 90px; */
+  width: 100%;
+}
+
+#battery-quantity-wrapper {
+  margin-top: 5px;
+}
+
+#inverter-quantity-wrapper {
+  margin-top: 5px;
+}
+
+#label-battery-quantity {
+  margin-left: 5px;
+}
+
+#grid-details {
+  position: absolute;
+  top: 95px;
+}
+
+#bill-form-group {
+  position: absolute;
+  width: 50vw;
+}
+
+#utility-api {
+  /* position: absolute;
+  left: 500px;
+  top: 50px; */
+  height: 22px;
+  text-align: center;
+  width: fit-content;
+  /* display:inline-block; */
+}
+
+#solar-api {
+  top: 200px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+}
+
+#utility-results {
+  /* white-space: nowrap; */
+  position: absolute;
+  display: block;
+  top: 40px;
+  width: 100%;
+  height: 70px;
+}
+
+.big-font {
+  font-size: 20px;
+}
+
+#solar-details-text {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin-top: 0px;
+  display: inline-block;
+}
+
+#sub-array-text {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin-top: 0px;
+  display: inline-block;
+}
+
+#average-electricity-text {
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+#output-options {
+  display: inline-block;
+}
+
+#residential-rate-inp {
+  display: inline-block;
+  width: 60px;
+}
+
+#electric-consumption {
+  width: 200px;
+  height: 30px;
+  top: 22px;
+  left: 330px;
+  position: absolute;
+}
+
+#kwh-slider {
+  position: absolute;
+  height: 16px;
+  top: 45px;
+  left: 295px;
+  width: 170px;
+  accent-color: #6fcc87;
+}
+
+#solar-array-details {
+  position: absolute;
+  height: 55px;
+  top: 110px;
+}
+
+#solar-array-slider {
+  width: 200px;
+  accent-color: #6fcc87;
+  display:inline-block";
+}
+
+#solar-array-kws {
+  position: absolute;
+  top: 20px;
+  left: 300px;
+}
+
+#solar-array-panels {
+  display:inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#battery-array-panels {
+  display:inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#battery-system-details {
+  position: absolute;
+  height: 55px;
+  top: 160px;
+  width: 100%;
+}
+
+#battery-array-details {
+  position:absolute;
+  height: 100%;
+  top: 0px;
+  margin: 0 auto;
+}
+
+#battery-array-slider {
+  width: 200px;
+  accent-color: #6fcc87;
+  display:inline-block";
+}
+
+#battery-array-kwhs {
+  position: absolute;
+  left: 340px;
+  top: 20px;
+}
+
+#battery-system-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#zip-code {
+  height: 20px;
+  width: 20%;
+}
+
+#monthly-bill {
+  height: 20px;
+  width: 20%;
+}
+
+h2 {
+  position: relative;
+  left: 0px;
+}
+h3 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin-top: 0px;
+}
+
+#email-input-container {
+  width: 250px;
+  height: 40px;
+}
+
+#email-label {
+  top: 30px;
+  left: 5px;
+  position: absolute;
+  margin-bottom: 0;
+}
+
+#monthly-results {
+  top: 620px;
+  position: absolute;
+  display: none;
+}
+
+#recalc-wrapper {
+  top: 590px;
+  position: absolute;
+  display: none;
+  width: 100%; 
+}
+
+#recalc-table {
+  top: 0px;
+  margin-left: 5px;
+  position: absolute;
+}
+
+button {
+background-color:#6fcc87;
+border:2px solid black;
+display:inline-block;
+cursor:pointer;
+color:black;
+font-family:Arial;
+  font-size: 15px;
+/* font-size:17px;
+padding:16px 31px; */
+text-decoration:none;
+}
+button:hover {
+background-color:#409884;
+}
+button:active {
+position:relative;
+top:1px;
+}
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+          .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg .tg-m3bo{background-color:#409884;border-color:#000000;color:#ffffff;font-family:Arial, Helvetica, sans-serif !important;
+            text-align:left;vertical-align:top}
+          .tg .tg-ujgf{background-color:#ffffff;border-color:#000000;font-family:Arial, Helvetica, sans-serif !important;text-align:left;
+            vertical-align:top}
+          .tg .tg-ubgt{background-color:#ffffff;border-color:#000000;font-family:Arial, Helvetica, sans-serif !important;text-align:center;
+            vertical-align:top}
+          .tg .tg-jerc{background-color:#409884;border-color:#000000;text-align:left;vertical-align:top}
+          .tg .tg-h1fx{background-color:#60d384;border-color:#000000;color:#ffffff;font-family:Arial, Helvetica, sans-serif !important;
+            font-weight:bold;text-align:left;vertical-align:top}
+          .tg .tg-huh6{background-color:#60d384;border-color:#000000;text-align:left;vertical-align:top}
+          .tg .tg-2rcr{background-color:#409884;border-color:#000000;color:#ffffff;font-family:Arial, Helvetica, sans-serif !important;
+            font-weight:bold;text-align:left;vertical-align:top}
+          .tg .tg-c6of{background-color:#ffffff;border-color:#000000;text-align:left;vertical-align:top}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  top: 1005px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+}
+
+/* CSS For smaller screens (phones/tablets) */
+@media (max-width:730px) {
+
+  #fortress-logo {
+      width: 50vw;
+      /* width:30%; */
+      position: relative; 
+      top: 2%; 
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  #system-designer {
+      width: 100vw;
+      height: 2500px;
+      margin: auto;
+      position: absolute;
+      overflow: hidden;
+  }
+
+  #app-content {
+      width: 100vw;
+      height: 100%;
+      /* margin: 0 auto; */
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      top: 4%;
+  }
+
+  .module {
+      width: 100%;
+      position: absolute;
+      /* margin: 0 auto; */
+      margin-bottom:10px;
+      margin-top:10px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  #module-kwh {
+      height: 100px;
+  }
+  
+  #module-system-information {
+      position: relative;
+      height: 150px;
+      width: 100%;
+      top: 120px;
+      display: none;
+  }
+  
+  #module-fortress-system {
+      position: absolute;
+      height: 50%;
+      width: 100%;
+      top: 410px;
+      display: none;
+  }
+
+  #optional-details {
+      display: none;
+      position: absolute;
+      top: 25px;
+      /* left: 256px; */
+      height: 55px;
+      margin-bottom: 5px;
+  }
+
+  #inverter-details {
+      position: absolute;
+      top: 100px;
+      width: 100%;
+      margin-top: 5px;
+  }
+
+  #battery-details {
+      position: absolute;
+      top: 170px;
+      width: 100%;
+  }
+
+  #battery-system-details {
+      position: absolute;
+      height: 80px;
+      top: 190px; 
+      width: 100%;
+  }
+
+  #kwh-slider {
+      position: absolute;
+      height: 16px;
+      top: 45px;
+      left: 0px;
+      width: 170px;
+      accent-color: #6fcc87;
+      display: inline-block;
+  }
+
+  #electric-consumption {
+      width: 200px;
+      height: 30px;
+      top: 45px;
+      left: 200px;
+      position: absolute;
+  }
+
+  #average-electricity-text{
+      font-size: 1rem;
+  }
+
+  #email-results {
+      display: none;
+      position: absolute;
+      margin: 0 auto;
+      /* top: calc(var(--results-top) + 40%); */
+      top: 1100px;
+      width: 100%;
+      height: fit-content;
+  }
+
+  #solar-api {
+      position: absolute;
+      top: 255px;
+      left: 10px;
+      text-align: center;
+      width: fit-content;
+  }
+
+  #system-results {
+      display: none;
+      position: absolute;
+      margin: 0 auto;
+      top: 280px;
+      left: 20px;
+  }
+
+  .big-font {
+      font-size: 16px;
+  }
+
+  #solar-details {
+      position: absolute;
+      left: 200px;
+      top: 0px;
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+  }
+
+  #fortress-module-text {
+      font-size: 20px;
+  }
+
+  #solar-array-details {
+      position: absolute;
+      height: 55px;
+      top: 130px;
+  }
+
+  #email-results {
+      display: none;
+      position: absolute;
+      margin: 0 auto;
+      top: 450px;
+      width: 100%;
+      height: 80px;
+  }
+
+  #email-input-container {
+      top: 70px;
+      left: 0px;
+      position: absolute;
+  }
+
+  #derate-wrapper {
+      width: fit-content;
+      left: 0px;
+      position: absolute;
+      top: 25px;
+      margin-left: 0px;
+  }
+
+  #inverter-capacity-wrapper {
+      width: fit-content;
+      left: 0px;
+      top: 50px;
+      position:absolute;
+  }
+
+  #monthly-results {
+      top: 600px;
+      position: absolute;
+      display: none;
+      width: 80%;
+      overflow-x: scroll; 
+  }
+
+  th, td {max-width:80px; }
+
+  #recalc-wrapper {
+      top: 570px;
+      position: absolute;
+  }
+
+  .popup {
+      position: absolute;
+      display: inline-block;
+      cursor: pointer;
+      top: 1060px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+}
+
+@media (max-width:410px) {
+  #electric-consumption {
+      width: 200px;
+      height: 30px;
+      top: 65px;
+      left: 0px;
+      position: absolute;
+  }
+
+  #monthly-consumption-text {
+      font-size: 14px;
+  }
+}
+
+@media (max-width:330px) {
+  #email-results {
+      display: none;
+      position: absolute;
+      margin: 0 auto;
+      top: 500px;
+      width: 100%;
+      height: 80px;
+  }
+
+  #recalc-wrapper {
+      top: 595px;
+      position: absolute;
+  }
+
+  #monthly-results {
+      top: 625px;
+      position: absolute;
+      display: none;
+      width: 80%;
+      overflow-x: scroll; 
+  }
+
+  .popup {
+      position: absolute;
+      display: inline-block;
+      cursor: pointer;
+      top: 1080px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+}
+
