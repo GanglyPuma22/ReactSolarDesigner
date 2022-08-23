@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ReactSystemDesigner/static/css/main.778f22d5.css",
-    "main.js": "/ReactSystemDesigner/static/js/main.74f8abd1.js",
+    "main.css": "/ReactSystemDesigner/static/css/main.7a1481c4.css",
+    "main.js": "/ReactSystemDesigner/static/js/main.4545f740.js",
     "static/js/787.d6f5194c.chunk.js": "/ReactSystemDesigner/static/js/787.d6f5194c.chunk.js",
     "static/media/fortress_logo.png": "/ReactSystemDesigner/static/media/fortress_logo.b7cd670bfd475be2c606.png",
     "index.html": "/ReactSystemDesigner/index.html",
-    "main.778f22d5.css.map": "/ReactSystemDesigner/static/css/main.778f22d5.css.map",
-    "main.74f8abd1.js.map": "/ReactSystemDesigner/static/js/main.74f8abd1.js.map",
+    "main.7a1481c4.css.map": "/ReactSystemDesigner/static/css/main.7a1481c4.css.map",
+    "main.4545f740.js.map": "/ReactSystemDesigner/static/js/main.4545f740.js.map",
     "787.d6f5194c.chunk.js.map": "/ReactSystemDesigner/static/js/787.d6f5194c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.778f22d5.css",
-    "static/js/main.74f8abd1.js"
+    "static/css/main.7a1481c4.css",
+    "static/js/main.4545f740.js"
   ]
 }
